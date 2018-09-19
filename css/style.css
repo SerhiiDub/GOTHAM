@@ -67,7 +67,7 @@ a{
 .article-img img{
 	width: 100%;
 	height: 100%;
-	transition: transform .3s ease-in;
+	transition: transform .5s ease-in;
 }
 .article-img img:hover{
 	transform: scale(1.5);
