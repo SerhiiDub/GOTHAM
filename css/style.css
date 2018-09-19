@@ -1,0 +1,247 @@
+@font-face{
+	src: '../fonts/Proxima Nova/ProximaNova-Reg.otf';
+	font-family: 'Proxima Nova';
+}
+@font-face{
+	src: '../fonts/Roboto/Roboto-Regular.ttf';
+	font-family: 'Roboto';
+}
+html{
+	font-size: 10px;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	padding-left: 7%;
+	padding-right: 7%;
+}
+.header{
+	height: 65px;
+	background-color: #f7c61d;
+}
+.header nav{
+	display: flex;
+	height: inherit;
+	justify-content: space-around;
+	align-items: center;
+}
+.header a{
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-family: 'Proxima Nova', sans-serif;
+	color: #000000;
+}
+.header a:hover{
+	color: #fff;
+}
+.main{
+	display: flex;
+}
+.articles{
+	flex: 2 0 82%;
+	min-height: 100vh;
+	border-right: 1px solid #e7e7e7;
+}
+.aside{
+	flex: 1 0 18%;
+	padding-top: 40px;
+	padding-left: 30px;
+}
+.midle-h{
+	margin-top: 40px;
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.article-wrap{
+	display: flex;
+	padding-bottom: 50px;
+}
+.article-img{
+	width: 30%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.article-img img{
+	width: 100%;
+	height: 100%;
+	transition: transform .3s ease-in;
+}
+.article-img img:hover{
+	transform: scale(1.5);
+}
+.article-content{
+	width: 70%;
+	padding: 0 30px;
+}
+.article-content h3{
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 3rem;
+  color: rgb(51, 51, 51);
+  font-weight: 300;
+}
+.article-content h3:hover{
+	color: #d1ad31;
+	transition: color .3s;
+}
+.article-meta span:nth-child(-n+2):after{
+	content: '|';
+}
+.article-meta, .article-meta a{
+	margin: 20px 0;
+	font-size: 1.3rem;
+	color: #a0a0a0;
+	transition: color .3s;
+}
+.article-category a{
+	color: #e3b002;
+}
+.article-content p{
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 1.6rem;
+	padding-bottom: 15px;
+	color: #555555;
+}
+.article-content p>a:after{
+	content: '>';
+	color: #e3b002;
+}
+.article-category a, .article-author:hover{
+	color: #f7c61d;
+}
+.article-view, .article-comment{
+	font-size: 1.3rem;
+	padding-right: 6px;
+	color: #a0a0a0;
+}
+.article-comment{
+	padding-left: 7px;
+}
+.article-view i, .article-comment i{
+	padding: 0 3px;
+}
+.article-comment a{
+	color: #e3b002;
+}
+.btn-yellow{
+	border: 1px solid #f7c61d;
+	padding: 15px 30px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 50px;
+}
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: #f7c61d;
+  color: #fff;
+}
+.date{
+	background-color: #e7e7e7;
+}
+.title {
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.8rem;
+}
+.title .h4-line {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+.title:before,
+.title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    position: relative;
+}
+.title:before {
+    margin-left: -100%;
+    left: -14px;
+}
+.title:after {
+    margin-right: -100%;
+    right: -14px;
+}
+.news{
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #000;
+}
+.news:hover{
+	color: #d1ad31;
+	transition: color .3s; 
+}
+.footer{
+	width: 100%;
+	height: 66px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #f8cc33;
+}
+.footer-intro{
+	float: left;
+	display: flex;
+	align-items: center;
+	font-size: 1.4rem;
+}
+.footer-intro span{
+	color: #a78613;
+}
+.footer-intro a{
+	word-spacing: 30px;
+}
+.foot-nav a{
+	color: #000;
+}
+.foot-nav a:hover{
+	color: #fff;
+}
+.soc{
+	height: 43px;
+	width: 43px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 50%;
+	color: #f8cc33;
+	background-color: #fff;
+	margin-right: 15px;
+}
+.soc:hover{
+	color: #fff;
+	background-color: #f8cc33;
+	border: 1px solid #fff;
+}
